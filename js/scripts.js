@@ -1,5 +1,12 @@
 var newfunction = function(txt) {
+  var output = 0;
   txt = parseInt(txt);
+  if (txt === 0) {
+    output = 0;
+  }
+  else if (txt === 1) {
+    output = 1;
+  }
   return txt;
 
 

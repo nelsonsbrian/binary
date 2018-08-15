@@ -29,6 +29,14 @@ The program uses only number intputs.
 Example Input: abc
 Example Output: Please input a number
 
+The program returns 0 when 0 is entered:
+Example Input: 0
+Example Output: 0
+
+The program returns 1 when 1 is entered:
+Example Input: 1
+Example Output: 1
+
 The program converts a single digit decimal number to a 2 digit binary
 Example Input: 2
 Example Output: 10

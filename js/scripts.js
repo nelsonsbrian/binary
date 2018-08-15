@@ -1,5 +1,6 @@
 var newfunction = function(txt) {
-  return txt;ß
+  txt = parseInt(txt);
+  return txt;
 
 
 }

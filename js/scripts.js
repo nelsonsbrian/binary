@@ -1,19 +1,14 @@
-var newfunction = function(txt) {
-  var output = 0;
+var newfunction = function(txt, power) {
   txt = parseInt(txt);
-  if (txt === 0) {
-    output = 0;
+  pwr = parseInt(power);
+
+  var binaryArray = [];
+  for(i=0;txt >= 1;i++) {
+    binaryArray.push(txt % pwr);
+    txt = Math.floor(txt / pwr);
   }
-  else if (txt === 1) {
-    output = 1;
-  }
-  return txt;
-
-
-}
-
-
-
+  return binaryArray.reverse().join('');
+};
 
 
 
@@ -21,8 +16,9 @@ $(document).ready(function() {
   $("form#numberTranslator").submit(function(event) {
     event.preventDefault();
 
-    var userInput = $("input#inputNumber").val();
-    var sentenceOutput = newfunction(userInput);
+    var userInputnum = $("input#inputNumber").val();
+    var userInputpwr = $("input#inputPower").val();
+    var sentenceOutput = newfunction(userInputnum, userInputpwr);
 
 
 

@@ -1,7 +1,7 @@
 var newfunction = function(txt) {
+  return txt;ß
 
 
-  return output;
 }
 
 
